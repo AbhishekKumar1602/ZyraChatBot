@@ -1,0 +1,122 @@
+version: "3.1"
+
+intents:
+  - bot_start_conversation
+  - bot_restart_conversation
+  - greet
+  - goodbye
+  - bot_challange
+  - revitalizing_image
+  - revitalizing_video
+  - hill_stations
+  - novel
+  - leave_balance
+
+
+actions:
+  - action_restart_conversation
+  - action_default_fallback
+
+responses:
+
+  utter_bot_start_conversation:
+    - text: "Greetings and Welcome! What can I do for you? 😊"
+      buttons:  
+        - title: "About Us"
+          payload: "about us"
+        - title: "Our Services"
+          payload: "our services"
+        - title: "Track Service Request"
+          payload: "track service request"
+        - title: "Contact Us"
+          payload: "contanct us"
+
+  utter_quickReply:
+    - text: "Our Services"
+      custom:
+        payload: quickReplies
+        data:
+          - title: "North Indian"
+            payload: "north indian"
+          - title: "South Indian"
+            payload: "south indian"
+          - title: "Chinese"
+            payload: "chinese"
+          - title: "Italian"
+            payload: "italian"
+
+  utter_image:
+    - text: "Presenting Revitalizing Image Featuring Dog."
+      image: "static/img/Labrador Retriever.jpg"
+
+  utter_video:
+    - text: "Presinting Revitalizing Video Featuring Amazon Forest."
+      attachment: {"type": "video", "payload": {"src": "https://www.youtube.com/watch?v=3uzucyoUe6Q"}}
+
+  utter_cardsCarousel:
+    - text: "I have following suggestions for you."
+      custom:
+        payload: cardsCarousel
+        data:
+          - image: "/static/img/Leh.jpg"
+            title: "Leh"
+            description: "<a href='https://www.makemytrip.com/tripideas/places/manali' target='_blank'>Click to View Details</a>"
+          - image: "/static/img/Manali.jpg"
+            title: "Manali"
+            description: "<a href='https://www.makemytrip.com/tripideas/places/leh' target='_blank'>Click to View Details</a>"
+          - image: "/static/img/Mussoorie.jpg"
+            title: "Mussoorie"
+            description: "<a href='https://www.makemytrip.com/tripideas/places/mussoorie' target='_blank'>Click to View Details</a>"
+          - image: "/static/img/Ooty.jpg"
+            title: "Ooty"
+            description: "<a href='https://www.makemytrip.com/tripideas/places/ooty' target='_blank'>Click to View Details</a>"
+          - image: "/static/img/Srinagar.jpg"
+            title: "Srinagar"
+            description: "<a href='https://www.makemytrip.com/tripideas/places/srinagar' target='_blank'>Click to View Details</a>"
+
+  utter_pdf:
+    - text: "I have found a Novel for you."
+      custom:
+        payload: pdf_attachment
+        title: "The Secret"
+        url: "http://192.168.20.106:30001/static/files/The%20Secret.pdf"
+
+  utter_chart:
+    - text: "Your Leave Balance Details"
+      custom:
+        payload: chart
+        data:
+          title: "Leaves"
+          labels:
+            - "Sick Leave"
+            - "Casual Leave"
+            - "Earned Leave"
+            - "Flexi Leave"
+          backgroundColor:
+            - "#36a2eb"
+            - "#ffcd56"
+            - "#ff6384"
+            - "#009688"
+          chartsData:
+            - 5
+            - 10
+            - 22
+            - 3
+          chartType: "pie"
+          displayLegend: 'true'
+
+  utter_goodbye:
+    - text: "Goodbye! If you stll have questions, don't hesitate to ask."
+
+  utter_bot_challange:
+    - text: "I'm Zyra, Your Esteemed Virtual Assistant."
+
+  utter_request_rephrase:
+    - text: "Apologies, I didn't quite catch that. Could you please rephrase your statement?"
+
+
+
+
+session_config:
+  session_expiration_time: 10
+  carry_over_slots_to_new_session: false

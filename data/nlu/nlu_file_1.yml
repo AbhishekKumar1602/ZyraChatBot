@@ -1,0 +1,130 @@
+version: "3.1"
+
+nlu:
+
+
+- intent: bot_start_conversation
+  examples: |
+    - /bot_start_conversation
+    - Bot Start Conversation
+
+- intent: bot_restart_conversation
+  examples: |
+    - /bot_restart_conversation
+    - Bot Restart Conversation
+
+- intent: bot_exit_conversation
+  examples: |
+    - /bot_exit_conversation
+    - Bot_Exit Conversation
+
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hii
+    - good morning
+    - morning
+    - good afternoon
+    - afternoon
+    - good evening
+    - evening
+    - good night
+    - night
+    - how are you
+    - hello there
+    - hey
+    - hey there
+    - hi, how's it going
+    - good day
+    - greetings
+    - what's up
+    - hi, what's new
+    - howdy
+    - hiya
+    - sup
+    - yo
+    - aloha
+    - hi!
+    - hey!
+    - good to see you
+    - hi, friend
+    - hey, how's it going
+    - hi, stranger
+    - hi, friend!
+    - hey, buddy
+    - hi, pal
+    - hey, there!
+    - hi, sunshine
+    - greetings!
+    - hi, how are you?
+    - hey, what's going on?
+    - hi, nice to meet you
+    - hey, nice to see you
+    - hi, it's me
+    - hey, it's been a while
+    - hi, long time no see
+    - greetings, earthling
+    - hi, what's the news
+    - hey, any updates?
+
+- intent: goodbye
+  examples: |
+    - bye
+    - see you soon
+    - nice meeting you
+    - goodbye
+    - farewell
+    - take care
+    - until next time
+    - adios
+    - catch you later
+    - goodbye for now
+    - see you around
+    - have a great day
+    - see you later
+    - see you next time
+    - it was a pleasure
+    - have a good one
+    - peace out
+    - see you tomorrow
+    - goodbye, friend
+    - bye-bye
+    - see you shortly
+    - farewell, my friend
+    - have a wonderful day
+    - until we meet again
+    - have a nice day
+    - goodbye, take care
+    - see you in a bit
+    - farewell, and be well
+    - until then
+    - have a fantastic time
+    - see you in the future
+    - it's been a pleasure
+    - so long
+    - until we meet once more
+    - goodbye, have a safe journey
+    - see you on the flip side
+    - it's time to say goodbye
+    - take it easy
+    - until our paths cross again
+    - farewell, and stay safe
+    - goodbye, it was nice talking to you
+
+- intent: bot_challange
+  examples: |
+    - who are you ?
+    - are you a bot?
+    - prove you're real
+    - can you pass Turing test?
+    - human or machine?
+    - convince me you're human
+    - are you a robot?
+    - show you're not automated
+    - prove you're not a bot
+    - human or AI?
+
+- intent: nlu_fallback
+  examples: |
+    - About Us

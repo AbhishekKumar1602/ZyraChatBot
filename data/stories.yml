@@ -1,0 +1,48 @@
+version: "3.1"
+
+stories:
+
+- story: Bot Start Conversation
+  steps:
+  - intent: bot_start_conversation
+  - action: utter_bot_start_conversation
+
+- story: Bot Restart Conversation
+  steps:
+  - intent: bot_restart_conversation
+  - action: action_restart_conversation
+
+- story: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Bot Challange
+  steps:
+  - intent: bot_challange
+  - action: utter_bot_challange
+
+- story: Revitalizing Image 
+  steps:
+  - intent: revitalizing_image 
+  - action: utter_image
+
+- story: Revitalizing Video
+  steps:
+  - intent: revitalizing_video
+  - action: utter_video
+
+- story: Hill Stations
+  steps: 
+  - intent: hill_stations
+  - action: utter_cardsCarousel
+
+- story: Novel
+  steps:
+  - intent: novel
+  - action: utter_pdf
+
+- story: Leave Balance
+  steps: 
+  - intent: leave_balance
+  - action: utter_chart

@@ -1,0 +1,38 @@
+version: "3.1"
+
+nlu:
+
+- intent: revitalizing_image
+  examples: |
+    - images
+    - some image
+    - any image
+    - revitalizing image
+
+- intent: revitalizing_video
+  examples: |
+    - video
+    - some video
+    - any video
+    - revitalizing video
+
+- intent: hill_stations
+  examples: |
+    - hill stations
+    - famous hill statiosn in india
+    - indian hill stations 
+    - suggets some hill stations to visit
+
+- intent: novel
+  examples: |
+    - books
+    - novels
+    - any book
+    - any novel
+
+- intent: leave_balance
+  examples: |
+    - leave balance
+    - my leave balance 
+    - remaining leaves 
+    - my remaining leaves
